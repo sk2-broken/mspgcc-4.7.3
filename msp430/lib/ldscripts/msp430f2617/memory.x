@@ -9,7 +9,7 @@ MEMORY {
   infob            : ORIGIN = 0x1080, LENGTH = 0x0040 /* END=0x10c0, size 64 */
   infoa            : ORIGIN = 0x10c0, LENGTH = 0x0040 /* END=0x1100, size 64 */
   ram (wx)         : ORIGIN = 0x1100, LENGTH = 0x2000 /* END=0x3100, size 8K */
-  rom (rx)         : ORIGIN = 0x3100, LENGTH = 0xcebe /* END=0xffbe, size 52926 */
+  rom (rx)         : ORIGIN = 0x3100, LENGTH = 0xcec0 /* END=0xffbe, size 52926 */
   vectors          : ORIGIN = 0xffc0, LENGTH = 0x0040 /* END=0x10000, size 64 as 32 2-byte segments */
   far_rom          : ORIGIN = 0x00010000, LENGTH = 0x0000a000 /* END=0x0001a000, size 40K */
   /* Remaining banks are absent */
